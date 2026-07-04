@@ -13,7 +13,7 @@
 
 /* Reset */
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, .header2, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
@@ -22,7 +22,7 @@
 		vertical-align: baseline;
 	}
 
-	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	article, aside, details, figcaption, figure, footer, .header2, hgroup, menu, nav, section {
 		display: block;
 	}
 
@@ -220,7 +220,7 @@
 	}
 
 /* Grid */
-
+/*
 	.row {
 		border-bottom: solid 1px transparent;
 		-moz-box-sizing: border-box;
@@ -1551,7 +1551,7 @@
 		}
 
 	}
-
+*/
 /* Basic */
 
 	@-ms-viewport {
@@ -1829,18 +1829,18 @@
 				border-radius: 0;
 			}
 
-		.box header {
+		.box .header2 {
 			margin: 0 0 2rem 0;
 		}
 
-			.box header h2 {
+			.box .header2 h2 {
 				margin-bottom: 1rem;
 				position: relative;
 				padding-bottom: 1rem;
 				font-weight: 700;
 			}
 
-				.box header h2:after {
+				.box .header2 h2:after {
 					content: '';
 					position: absolute;
 					margin: auto;
@@ -1852,7 +1852,7 @@
 					background-color: rgba(0, 0, 0, 0.125);
 				}
 
-			.box header p {
+			.box .header2 p {
 				text-transform: uppercase;
 				font-size: .75rem;
 				font-weight: 300;
@@ -2328,11 +2328,27 @@
 		-webkit-align-items: stretch;
 		-ms-align-items: stretch;
 		align-items: stretch;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+
 	}
 
+	
+
 		.gallery .image.fit {
-			margin: 0;
+			margin: auto;
+			max-width: 100% ;
+			max-height: 100%;
+			background-color: #FFF;
+			border-radius: 5px;
+			overflow: hidden;
+			position: relative;
+			padding: auto;
+
+		
 		}
+		
 
 		.gallery > * {
 			-moz-flex-shrink: 1;
@@ -2346,7 +2362,9 @@
 		}
 
 		.gallery > * {
-			width: 50%;
+			width: 45%;
+			margin: 5px;
+
 		}
 
 		@media screen and (max-width: 980px) {
@@ -2390,7 +2408,6 @@
 		}
 
 		.image.fit.flush{
-			max-height:50% !important;
 			float:top;
 			
 		}
@@ -2426,7 +2443,8 @@
 		}
 
 			.image.fit img {
-				width: 100%;
+				max-height: 20em;
+				margin: auto;
 			}
 
 		.image.main {
@@ -2440,7 +2458,7 @@
 			}
 
 /* List */
-
+/*
 	ol {
 		list-style: decimal;
 		margin: 0 0 2rem 0;
@@ -2615,6 +2633,83 @@
 	ul.alt li {
 		border-top-color: rgba(144, 144, 144, 0.25);
 	}
+*/
+
+
+   /* Header */
+
+	
+
+	header {
+		background: rgba(200, 190, 134, 0.975);
+		color: #a6a6a6;
+		cursor: default;
+		height: 5em;
+		left: 0;
+		line-height: 5em;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 10001;
+		
+		
+	}
+	header div{
+		display: flexbox;
+	}
+
+		#header > .logo {
+			display: inline-block;
+			height: inherit;
+			left: 1.25em;
+			line-height: inherit;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			top: 0;
+		}
+
+			#header > .logo a {
+				font-size: 1em;
+				color: rgb(22, 114, 207);
+				text-decoration: none;
+				font-weight: 1000;
+			}
+
+				#header > .logo a:hover {
+					color: rgba(56, 34, 252, 0.65);
+				}
+
+			#header > .logo span {
+				font-weight: 400;
+				font-size: .8em;
+				color: rgba(0, 56, 154, 0.73);
+				
+			}
+
+header ul{
+    position: fixed;
+    right:0;
+}
+header li {
+    display: inline-block;
+}
+header a{
+    display: block;
+    padding: 0em 1em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1em;
+    outline: 0;
+    color: rgb(23, 96, 205);
+
+}
+header .icon{
+	height: 30px;
+	width: auto;
+}
+
 
 /* Section/Article */
 
@@ -2622,29 +2717,29 @@
 		text-align: center;
 	}
 
-	header p {
+	.header2 p {
 		position: relative;
 		margin: 0 0 1.5rem 0;
 	}
 
-	header h2 + p {
+	.header2 h2 + p {
 		font-size: 1.25rem;
 		margin-top: -1rem;
 	}
 
-	header h3 + p {
+	.header2 h3 + p {
 		font-size: 1.1rem;
 		margin-top: -0.8rem;
 	}
 
-	header h4 + p,
-	header h5 + p,
-	header h6 + p {
+	.header2 h4 + p,
+	.header2 h5 + p,
+	.header2 h6 + p {
 		font-size: 0.9rem;
 		margin-top: -0.6rem;
 	}
 
-	header p {
+	.header2 p {
 		color: #bbb;
 	}
 
@@ -2822,7 +2917,7 @@
 		}
 
 /* Table */
-
+/*
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
@@ -2907,8 +3002,8 @@
 	table.alt tbody tr td {
 		border-color: rgba(144, 144, 144, 0.25);
 	}
-
-/* Header */
+*/
+/* .header2 */
 
 	body {
 		background-color: #1e1f23;
@@ -2930,7 +3025,7 @@
 			-ms-transition: opacity 1.5s ease-in-out, visibility 1.5s;
 			transition: opacity 1.5s ease-in-out, visibility 1.5s;
 			content: '';
-			background-image: url(../../images/bg.jpg);
+			background-image: url(../../img/clay_femme2.jpg);
 			background-attachment: fixed;
 			background-position: center;
 			background-repeat: no-repeat;
@@ -2956,7 +3051,7 @@
 
 			}
 
-	#header {
+	#header2 {
 		color: #a6a6a6;
 		cursor: default;
 		position: relative;
@@ -2964,12 +3059,12 @@
 		z-index: 10001;
 	}
 
-		#header > .logo {
+		#header2 > .logo {
 			margin: 0 0 4rem 0;
 			padding: 0;
 		}
 
-			#header > .logo a {
+			#header2 > .logo a {
 				font-size: 4rem;
 				font-weight: 700;
 				color: #FFF;
@@ -2977,11 +3072,12 @@
 				line-height: 1rem;
 			}
 
-			#header > .logo span {
+			#header2 > .logo span {
 				font-weight: 300;
 				font-size: 1rem;
 				display: block;
 				color: rgba(255, 255, 255, 0.65);
+				padding: 2em;
 			}
 
 	@media screen and (max-width: 1280px) {
@@ -2997,11 +3093,11 @@
 
 	@media screen and (max-width: 736px) {
 
-		#header > .logo {
+		#header2 > .logo {
 			margin: 0 0 2rem 0;
 		}
 
-			#header > .logo a {
+			#header2 > .logo a {
 				font-size: 3rem;
 			}
 
@@ -3036,19 +3132,19 @@
 
 	}
 
-	.wrapper > header {
+	.wrapper > .header2 {
 		text-align: center;
 		background: #FFF;
 		padding: 2rem;
 		margin: 0;
 	}
 
-		.wrapper > header h2 {
+		.wrapper > .header2 h2 {
 			position: relative;
 			padding-bottom: .75rem;
 		}
 
-			.wrapper > header h2:after {
+			.wrapper > .header2 h2:after {
 				content: '';
 				position: absolute;
 				margin: auto;
@@ -3060,7 +3156,7 @@
 				background-color: rgba(0, 0, 0, 0.125);
 			}
 
-		.wrapper > header p {
+		.wrapper > .header2 p {
 			text-transform: uppercase;
 			font-weight: 300;
 			font-size: .8rem;
@@ -3068,29 +3164,30 @@
 			margin: 0;
 		}
 
-		.wrapper > header.special {
-			padding: 4rem 2rem;
+		.wrapper > .special {
+			padding: 2rem 2rem 0 2rem;
+			text-align: center;
 		}
 
 			@media screen and (max-width: 980px) {
 
-				.wrapper > header.special {
-					padding: 3rem 2rem;
+				.wrapper > .special {
+					padding: 1rem 2rem 0 2rem;
 				}
 
 			}
 
 		@media screen and (max-width: 736px) {
 
-			.wrapper > header {
+			.wrapper > .header2 {
 				padding: 1.5rem;
 			}
 
-				.wrapper > header h2 {
+				.wrapper > .header2 h2 {
 					font-size: 1.5rem;
 				}
 
-					.wrapper > header h2:after {
+					.wrapper > .header2 h2:after {
 						width: 50%;
 					}
 
@@ -3121,20 +3218,20 @@
 		padding: 6rem;
 	}
 
-		.wrapper.style2 header {
+		.wrapper.style2 .header2 {
 			background: #121315;
 			border-radius: 4px 4px 0 0;
 		}
 
-			.wrapper.style2 header h2 {
+			.wrapper.style2 .header2 h2 {
 				color: #FFF;
 			}
 
-				.wrapper.style2 header h2:after {
+				.wrapper.style2 .header2 h2:after {
 					background-color: rgba(255, 255, 255, 0.125);
 				}
 
-			.wrapper.style2 header p {
+			.wrapper.style2 .header2 p {
 				color: rgba(255, 255, 255, 0.25);
 			}
 
@@ -3161,6 +3258,10 @@
 		text-align: center;
 	}
 
+		#footer li {
+			display: inline-block;
+		}
+
 		#footer a {
 			color: rgba(255, 255, 255, 0.75);
 		}
@@ -3184,3 +3285,16 @@
 			}
 
 		}
+
+
+
+.contacts{
+		margin-top: 100px;
+		margin-bottom: 50px;
+		background-color: #ebebeb;
+		color: #181818;
+		padding: 2%;
+		border-radius: 4px;
+}
+
+

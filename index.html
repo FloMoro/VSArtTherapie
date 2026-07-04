@@ -6,17 +6,36 @@
 -->
 <html>
 	<head>
-		<title>Caminar by TEMPLATED</title>
+		<title>Viviane Sautereaux - Art thérapeute</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="img/art_therapie.jpg" type="image/gif" sizes="16x16">
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body>
 
+	
 		<!-- Header -->
-			<header id="header">
+
+		<header>
+			<section id="header" class="alt header">
+                <div class="logo"><a href="index.html">Viviane Sautereaux <span>Art thérapeute</span></a></div>
+<div>
+                <ul>
+				<li><a href="index.html#apropos">Présentation</a></li>
+				<li><a href="index.html#audiovisuel">Modalités</a></li>
+				<li><a href="index.html#audio-visuel">Prez</a></li>
+				<li><a href="contact.html">Contacts</a></li>
+
+
+			</ul>
+			</div>
+		</header>
+
+
+			<section id="header2" class="alt header2">
 				<div class="logo"><a href="#">Viviane Sautereaux<span>Art thérapeute</span></a></div>
-			</header>
+			</section>
 
 		<!-- Main -->
 			<section id="main">
@@ -26,12 +45,12 @@
 					<section id="one" class="wrapper style1">
 
 						<div  class="image fit flush">
-							<img id="imgprez" src="img/art_therapie.jpg" alt="" />
+							<img  src="img/art_therapie.jpg" alt="" />
 						</div>
-						<header class="special">
+						<div class="special">
 							<h2>Qu'est-ce que l'art-thérapie ?</h2>
 							<p>vehicula urna sed justo bibendum</p>
-						</header>
+						</div>
 						<div class="content">
 							<p>
                             Utilisation des processus artistiques à des fins de mieux être en développant les 
@@ -64,10 +83,10 @@
 
 				<!-- Two -->
 					<section id="two" class="wrapper style2">
-						<header>
+						<div>
 							<h2>Vestibulum Convallis</h2>
 							<p>vehicula urna sed justo bibendum</p>
-						</header>
+						</div>
 						<div class="content">
 							<div class="gallery">
 								<div>
@@ -77,17 +96,17 @@
 								</div>
 								<div>
 									<div class="image fit flush">
-										<a href="img/clay_plante.jpg"><img src="img/clay_plante.jpg" alt="" /></a>
+										<a href="img/boite.jpg"><img src="img/boite.jpg" alt="" /></a>
 									</div>
 								</div>
 								<div>
 									<div class="image fit flush">
-										<a href="img/indiv5.jpg"><img src="img/indiv5.jpg" alt="" /></a>
+										<a href="img/show3.jpg"><img src="img/show3.jpg" alt="" /></a>
 									</div>
 								</div>
 								<div>
 									<div class="image fit flush">
-										<a href="img/palette.jpg"><img src="img/palette.jpg" alt="" /></a>
+										<a href="img/show2.jpg"><img src="img/show2.jpg" alt="" /></a>
 									</div>
 								</div>
 							</div>
@@ -125,6 +144,27 @@
 
 				</div>
 			</section>
+
+			<div class="contacts container">
+
+            <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/mzbrgjjz" method="POST">
+                <fieldset id="fs-frm-inputs">
+                <label for="full-name" class="space">Nom</label>
+                <input type="text" name="Nom" id="full-name" placeholder="First and Last" required="">
+                <label class="space" for="email-address">Mail</label>
+                <input type="email" name="Adresse" id="email-address" placeholder="exemple@mail.com" required="">
+                <label for="telephone" class="space">Telephone</label>
+                <input type="text" name="Telephone" id="telephone" placeholder="00 00 00 00 00">
+                <label for="complaint" class="space">Message</label>
+                <textarea rows="6" name="Message" id="complaint" placeholder="Message..." required=""></textarea>
+                <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
+                </fieldset>
+                <br>
+                <input type="submit" value="File Complaint">
+				<a href="mailto:vsautereaux.art.therapie@gmail.com">mailto test</a>
+            </form>
+
+        </div>
 
 		<!-- Footer -->
 			<footer id="footer">
