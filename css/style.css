@@ -683,7 +683,9 @@ ul.style3 .first {
 }
 
 /*********************************************************************************/
-/* Header                                                                        */
+/* Header   
+
+/
 /*********************************************************************************/
 
 	#header
@@ -747,5 +749,10 @@ ul.style3 .first {
 	#main
 	{
 		padding: 5em 0em;
-		background: #FFF
+		background: #f80505
 	}	
+
+	.active{
+		background-color: #E7E5DA;
+		color : blue;
+	}
