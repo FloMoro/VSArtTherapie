@@ -15,7 +15,7 @@
 	
 		.homepage #header
 		{
-			padding: 10em 0em;
+			padding: 1em 0em;
 		}
 
 		#header .container
@@ -87,20 +87,21 @@
 				font-weight: 200;
 				font-size: 1em;
 				outline: 0;
-				color: #323338;
+				color: #3965ae;
+;
 			}
 
 
 			#nav > ul > li > a:hover
 			{
-				color: #FFF;
+				color: #7298d5;
 			}
 
 			#nav li.active a
 			{
-				background: #323338;
+				background: #3965ae;
 				border-radius: 4px;
-				color: #FFF;
+				color: #0c2957;
 			}
 
 			#nav > ul > li > ul

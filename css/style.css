@@ -14,11 +14,11 @@
 	body {
 		margin: 0px;
 		padding: 0px;
-		background: #f3f2ed;
+		background: #709eef;
 		font-family: 'Lato', sans-serif;
 		font-size: 12pt;
 		font-weight: 300;
-		color: #8A8A8A;
+		color: #3965ae;
 	}
 
 	h1, h2, h3 {
@@ -46,12 +46,12 @@
 	}
 
 	a {
-		color: #D1551F;
+		color: #3965ae;
 	}
 
 	strong {
 		font-weight: 700;
-		color: #2A2A2A;
+		color: #1c53ad;
 	}
 
 	/* Images */
@@ -111,7 +111,7 @@
 		text-transform: uppercase;
 		font-weight: 900;
 		font-size: 2em;
-		color: #323338;
+		color: #3965ae;
 	}
 
 	header .byline
@@ -159,7 +159,7 @@
 		.fa-fw{width:1.2857142857142858em;text-align:center}
 		.fa-ul{padding-left:0;margin-left:2.142857142857143em;list-style-type:none}.fa-ul>li{position:relative}
 		.fa-li{position:absolute;left:-2.142857142857143em;width:2.142857142857143em;top:.14285714285714285em;text-align:center}.fa-li.fa-lg{left:-1.8571428571428572em}
-		.fa-border{padding:.2em .25em .15em;border:solid .08em #eee;border-radius:.1em}
+		.fa-border{padding:.2em .25em .15em;border:solid .08em #b006ff;border-radius:.1em}
 		.pull-right{float:right}
 		.pull-left{float:left}
 		.fa.pull-left{margin-right:.3em}
@@ -174,7 +174,7 @@
 		.fa-stack-1x,.fa-stack-2x{position:absolute;left:0;width:100%;text-align:center}
 		.fa-stack-1x{line-height:inherit}
 		.fa-stack-2x{font-size:2em}
-		.fa-inverse{color:#fff}
+		.fa-inverse{color:#b006ff}
 		.fa-glass:before{content:"\f000"}
 		.fa-music:before{content:"\f001"}
 		.fa-search:before{content:"\f002"}
@@ -558,7 +558,7 @@ ul.style1 {
 ul.style1 li {
 	display: inline-block;
 	padding: 1em 0em;
-	border-top: 1px solid #E6E6E6;
+	border-top: 1px solid #1d53a9;
 	line-height: 160%;
 }
 
@@ -569,7 +569,7 @@ ul.style1 span
 
 ul.style1 a {
 	text-decoration: none;
-	color: #525252;
+	color: #b006ff;
 }
 
 ul.style1 a:hover {
@@ -591,13 +591,13 @@ ul.style3 {
 
 ul.style3 li {
 	padding: 20px 0px 25px 0px;
-	border-top: 1px solid #E7E5DA;
+	border-top: 1px solid #b006ff;
 }
 
 ul.style3 a {
 	display: block;
 	text-decoration: none;
-	color: #525252;
+	color: #b006ff;
 }
 
 ul.style3 a:hover {
@@ -608,14 +608,14 @@ ul.style3 .date {
 	display: inline-block;
 	margin: 0px 0px 20px 0px;
 	padding: 1em 1em;
-	background: #323338;
+	background: #709eef;
 	border-radius: 4px;
 	line-height: normal;
 	text-align: center;
 	text-transform: uppercase;
 	font-family: 'Abel', sans-serif;
 	font-size: 14px;
-	color: #FFFFFF;
+	color: #b006ff;
 }
 
 ul.style3 .date b {
@@ -644,12 +644,12 @@ ul.style3 .first {
 			display: inline-block;
 			margin-top: 2em;
 			padding: 1em 1.5em;
-			background: #323338;
+			background: #7899ce;
 			border-radius: 4px;
 			text-decoration: none;
 			text-transform: uppercase;
 			font-size: 1.1em;
-			color: #FFF;
+			color: #3965ae;
 			-moz-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
 			-webkit-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
 			-o-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
@@ -657,29 +657,29 @@ ul.style3 .first {
 			transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
 			cursor: pointer;
 		}
-
+/*
 			.button:hover
 			{
-				background: #1f2023;
-				color: #FFF !important;
+				background: #0040ff;
+				color: #807bff !important;
 			}
-
+*/
 .button-style {
 	margin: 20px 0px 20px 0px;
 }
 
 .button-style a {
 	padding: 7px 20px 7px 20px;
-	background: #CEC3A0;
+	background: #709eef;
 	border-radius: 5px;
 	line-height: normal;
 	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
-	text-shadow: 1px 1px 1px #8A8B71;
+	text-shadow: 1px 1px 1px #aeabfe;
 	font-family: 'Abel', sans-serif;
 	font-size: 14px;
-	color: #FFFFFF;
+	color: #8c82ff;
 }
 
 /*********************************************************************************/
@@ -690,16 +690,17 @@ ul.style3 .first {
 
 	#header
 	{
-		position: relative;
 		text-align: center;
-		background: url(../img/art_therapie.jpg) no-repeat top;
-		background-size: cover;
+		display: flex ;
+	}
+	#header img{
+		width: 70%;
 	}
 
 
 	#page {
 		padding: 5em 0em;
-		background: #FFF
+		background: #feeec0
 	}
 	
 	#content header
@@ -749,10 +750,18 @@ ul.style3 .first {
 	#main
 	{
 		padding: 5em 0em;
-		background: #f80505
+		background: #b006ff
 	}	
 
 	.active{
 		background-color: #E7E5DA;
-		color : blue;
+		color : #b006ff;
+	}
+
+	.gallery img{
+		width: 20%;
+	}
+
+	.pelicule img{
+		width: 100%;
 	}
